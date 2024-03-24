@@ -1,5 +1,19 @@
 <?php
-//Show More Images Gallery (Accommodations and Properties CPT)
+
+/**
+ * Plugin Name:       Show More Images for Gallery Grid Widget
+ * Plugin URI:        https://github.com/jorgoiliakopoulos/Gallery-Grid-Widget-Show-More-Images
+ * Description:       Enhances image galleries for specific custom post types by hiding images beyond the fourth and showing a customizable indicator for additional images.
+ * Version:           1.0.0
+ * Requires at least: 5.2
+ * Requires PHP:      7.2
+ * Author:            Jorgo Iliakopoulos
+ * Author URI:        http://nerobianco8.com/
+ * License:           GPL v3 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
+ * Text Domain:       show-more-images-gallery
+ */
+
 function my_custom_footer_scripts() {
     // Check if the current post type is either 'accommodations-cpt' or 'properties-rent-cpt'
     if ( ! is_singular( array( 'accommodations-cpt', 'properties-rent-cpt' ) ) ) {
